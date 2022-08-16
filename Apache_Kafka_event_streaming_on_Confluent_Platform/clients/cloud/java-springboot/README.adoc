@@ -1,0 +1,10 @@
+= Overview
+:experimental:
+
+NOTE: Produce messages to and consume messages from https://www.confluent.io/confluent-cloud/?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.clients-ccloud[Confluent Cloud] using the Spring Boot using Java API.
+
+= Documentation
+
+You can find the documentation and instructions for running this Java Spring Boot example
+at
+https://docs.confluent.io/platform/current/tutorials/examples/clients/docs/java-springboot.html?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.clients-ccloud[https://docs.confluent.io/platform/current/tutorials/examples/clients/docs/java-springboot.html]

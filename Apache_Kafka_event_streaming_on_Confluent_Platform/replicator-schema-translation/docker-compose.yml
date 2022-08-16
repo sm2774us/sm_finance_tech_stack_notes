@@ -1,0 +1,166 @@
+# docker-compose supports environment variable substitution with the ${VARIABLE-NAME} syntax.
+# Environment variables can be sourced in a variety of ways.  One of those ways is through
+# a well known '.env' file located in the same folder as the docker-compose.yml file.  See the Docker
+# documentation for details: https://docs.docker.com/compose/environment-variables/#the-env-file
+# 
+# This feature is being used to parameterize some values within this file.  In this directory is also
+# a .env file, which is actually a symbolic link to <examples-root>/utils/config.env.  That file
+# contains values which get substituted here when docker-compose parses this file.
+#
+# If you'd like to view the docker-compose.yml file rendered with its environment variable substituions
+# you can execute the `docker-compose config` command.  Take note that some demos provide additional 
+# environment variable values by exporting them in a script prior to running `docker-compose up`.
+---
+version: "2.2"
+services:
+  srcZookeeper:
+    image: ${REPOSITORY}/cp-zookeeper:${CONFLUENT_DOCKER_TAG}
+    restart: always
+    hostname: srcZookeeper
+    container_name: srcZookeeper
+    environment:
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_CLIENT_PORT: "2181"
+      ZOOKEEPER_TICK_TIME: "2000"
+    ports:
+      - "2181:2181"
+  destZookeeper:
+    image: ${REPOSITORY}/cp-zookeeper:${CONFLUENT_DOCKER_TAG}
+    restart: always
+    hostname: destZookeeper
+    container_name: destZookeeper
+    environment:
+      ZOOKEEPER_SERVER_ID: 1
+      ZOOKEEPER_CLIENT_PORT: "2281"
+      ZOOKEEPER_TICK_TIME: "2000"
+    ports:
+      - "2281:2281"
+  srcKafka1:
+    image: ${REPOSITORY}/cp-server:${CONFLUENT_DOCKER_TAG}
+    hostname: srcKafka1
+    container_name: srcKafka1
+    depends_on:
+      - srcZookeeper
+    ports:
+      - "10091:10091"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: "srcZookeeper:2181"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://srcKafka1:10091
+      KAFKA_BROKER_ID: 1
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONFLUENT_LICENSE_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONFLUENT_BALANCER_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_DELETE_TOPIC_ENABLE: "true"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+      KAFKA_CONFLUENT_SUPPORT_METRICS_ENABLE: "false"
+  destKafka1:
+    image: ${REPOSITORY}/cp-server:${CONFLUENT_DOCKER_TAG}
+    hostname: destKafka1
+    container_name: destKafka1
+    depends_on:
+      - destZookeeper
+    ports:
+      - "11091:11091"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: "destZookeeper:2281"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://destKafka1:11091
+      KAFKA_BROKER_ID: 1
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONFLUENT_LICENSE_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CONFLUENT_BALANCER_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_DELETE_TOPIC_ENABLE: "true"
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
+  connect:
+    image: ${REPOSITORY}/cp-server-connect:${CONFLUENT_DOCKER_TAG}
+    container_name: connect
+    restart: always
+    ports:
+      - "8083:8083"
+    depends_on:
+      - destKafka1
+    volumes:
+      - mi3:/usr/share/replicator/kafka-connect-replicator/
+      - $PWD/scripts:/etc/kafka/scripts
+    environment:
+      CONNECT_BOOTSTRAP_SERVERS: "destKafka1:11091"
+      CONNECT_LISTENERS: "http://0.0.0.0:8083"
+      CONNECT_CONFIG_STORAGE_TOPIC: connect-configs
+      CONNECT_OFFSET_STORAGE_TOPIC: connect-offsets
+      CONNECT_STATUS_STORAGE_TOPIC: connect-statuses
+      CONNECT_KEY_CONVERTER: "org.apache.kafka.connect.storage.StringConverter"
+      CONNECT_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
+      CONNECT_GROUP_ID: "connect"
+      CONNECT_LOG4J_ROOT_LOGLEVEL: INFO
+      CONNECT_REST_ADVERTISED_HOST_NAME: "connect"
+      CONNECT_PLUGIN_PATH: "/usr/share/replicator"
+      CONNECT_REPLICATION_FACTOR: 1
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+  srcSchemaregistry:
+    image: ${REPOSITORY}/cp-schema-registry:${CONFLUENT_DOCKER_TAG}
+    container_name: srcSchemaregistry
+    restart: always
+    depends_on:
+      - srcKafka1
+    environment:
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: "srcKafka1:10091"
+      SCHEMA_REGISTRY_HOST_NAME: schemaregistry
+      SCHEMA_REGISTRY_LISTENERS: "http://0.0.0.0:8085"
+      SCHEMA_REGISTRY_KAFKASTORE_SECURITY_PROTOCOL: PLAINTEXT
+      SCHEMA_REGISTRY_MODE_MUTABILITY: "true"
+      SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: INFO
+    ports:
+      - 8085:8085
+  destSchemaregistry:
+    image: ${REPOSITORY}/cp-schema-registry:${CONFLUENT_DOCKER_TAG}
+    container_name: destSchemaregistry
+    restart: always
+    depends_on:
+      - destKafka1
+    environment:
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: "destKafka1:11091"
+      SCHEMA_REGISTRY_HOST_NAME: schemaregistry
+      SCHEMA_REGISTRY_LISTENERS: "http://0.0.0.0:8086"
+      SCHEMA_REGISTRY_KAFKASTORE_SECURITY_PROTOCOL: PLAINTEXT
+      SCHEMA_REGISTRY_MODE_MUTABILITY: "true"
+      SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: INFO
+    ports:
+      - 8086:8086
+  replicator-for-jar-transfer:
+    image: ${REPOSITORY}/cp-enterprise-replicator:${CONFLUENT_DOCKER_TAG}
+    hostname: replicator-for-jar-transfer
+    container_name: replicator-for-jar-transfer
+    volumes:
+      - mi3:/usr/share/java/kafka-connect-replicator/
+    command: "sleep infinity"
+  kafka-client:
+    image: ${REPOSITORY}/cp-server:${CONFLUENT_DOCKER_TAG}
+    hostname: kafka-client
+    container_name: kafka-client
+    depends_on:
+      - srcKafka1
+      - connect
+    volumes:
+      - $PWD/scripts:/etc/kafka/scripts
+    command: "bash -c -a 'echo Waiting for Kafka to be ready... && \
+                       /etc/confluent/docker/configure && \
+                       cub kafka-ready -b srcKafka1:10091 1 60 --config /etc/kafka/kafka.properties && \
+                       cub kafka-ready -b destKafka1:11091 1 60 --config /etc/kafka/kafka.properties && \
+                       sleep 30 && \
+                       kafka-topics --bootstrap-server srcKafka1:10091 --topic testTopic --create --replication-factor 1 --partitions 6 && \
+                       echo submitting test subjects && \
+                       /etc/kafka/scripts/submit_source_subjects.sh && \
+                       echo submitted source_subjects'"
+    environment:
+      # The following settings are listed here only to satisfy the image's requirements.
+      # We override the image's `command` anyways, hence this container will not start a broker.
+      KAFKA_BROKER_ID: ignored
+      KAFKA_ZOOKEEPER_CONNECT: ignored
+      KAFKA_ADVERTISED_LISTENERS: ignored
+volumes:
+    mi3: {}

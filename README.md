@@ -1,5 +1,7 @@
 # FINANCE TECH STACK
 
+## [Apache Kafka event streaming on Confluent Platform : This is a curated list of demos that showcase Apache Kafka® event stream processing on the Confluent Platform, an event stream processing platform that enables you to process, organize, and manage massive amounts of streaming data across cloud, on-prem, and serverless deployments.](./Apache_Kafka_event_streaming_on_Confluent_Platform/)
+
 ## [Blog Tutorials](./Blog_Tutorials/)
 
 ## [Techie-Notes Wiki](./Techies_Notes_Wiki/)
