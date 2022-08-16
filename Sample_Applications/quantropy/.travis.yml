@@ -1,0 +1,31 @@
+sudo: required
+language: python
+python:
+  - "3.8.2"
+
+install:  # command to install dependencies
+  - pip install -r requirements.txt
+
+env:
+  global:
+    # global environment variable for PyPi
+    secure: 1pev3IkBx6l4ndipjNY1jaw9VgV2ERnx9/0JrnS55qiU7udWYlgWiTqDAWa4Ew8LYWG8OitJGHE6GH5HawKzimXzs50Z0H7kOW1qkqhIY4zp67bEQPROzupn4bJDPaetmYl9Hj9Pg3evqnL8l0h34QsREY1n+AJGEGh0na36q1nm2qPJTsEv081tg+tPrTdidN9m0v9G+++tK93pz4gRO5KAmFBpxVPgCo9r0zU5AeKuu+EWHDG+J+gWdsR4RGkT2HoQ+0hHHK6SGrxwpQvup+lB4iCWShBQ20hQynEKEzJBPRFrAaNmt5zz25uGaidtGu9XTPaMoqNNbH+cpd48HX4qI7ao7bY8Xy/P59ll/arJmYE/em1cGJvrUeMEWFI9QyaN1ukPvt6f32iASSwr7Vm7jUg9hfT5uiNBG4wmqaJqMKGcIz6X7wYWW7tmYgkIlFkuAXAmrbzicKfHG+0xzFzVeQknQIh9Iw7dGG+8FfYiPPMaYDNOBrpcQpQkfXtubyxqeTenOn3DN9if7Q9wr9CAySBqy1P5wjuEnrVZhgJl/Nj+ppkF+zMUW9Q/Tvpv1RqTY3/8eYoWmTGuMQ+BoTj6oD58wYst9cUGKaqtbXYVIHg9u5HlSkT2JHaHzVIG5zLmVwo7FZNH2KrTBOCS9hLow96Roasb0it9wPbsycU=
+
+deploy:  # command to deploy package
+  # basically: delete .egg-info, build, and dist, then 'py -m build', and 'py -m twine upload --skip-existing dist/*'
+  provider: pypi
+  username: "AlainDaccache"
+  password:
+    secure: PYPI_KEY
+  on:
+    tags: true
+    branch: master
+
+services:
+  - docker
+
+script:
+  - python -m unittest tests.test_fundamental_analysis  # run tests
+  - docker build -t matilda .  # run docker
+
+# to build ReadTheDocs: sphinx-build -E -b html -d docs/build/doctrees docs/source build/html

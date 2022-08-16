@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.rieckpil.blog</groupId>
+	<artifactId>simple-java-function</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>simple-java-function</name>
+	<description>Simple Java Function for PL/Java</description>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- HINT: This package is not available at Maven Central! You'll get it 
+			while building PL/Java installed in your local .m2 folder. If you just need 
+			this .jar on your development machine and don't want to fully build PL/Java, 
+			just navigate in the pljava-api folder of the cloned repository and run mvn 
+			install -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>pljava-api</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>simple-java-function</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>
+								true
+							</addDefaultImplementationEntries>
+						</manifest>
+						<manifestSections>
+							<manifestSection>
+								<name>pljava.ddr</name>
+								<manifestEntries>
+									<SQLJDeploymentDescriptor>
+										true
+									</SQLJDeploymentDescriptor>
+								</manifestEntries>
+							</manifestSection>
+						</manifestSections>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

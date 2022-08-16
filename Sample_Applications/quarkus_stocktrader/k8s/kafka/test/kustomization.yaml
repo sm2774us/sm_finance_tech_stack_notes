@@ -1,0 +1,10 @@
+---
+namespace: daytrader-test
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+bases:
+  - ../base
+resources:
+  - namespace.yaml

@@ -1,0 +1,172 @@
+:root{
+	--color1: #142850; /* dark blue */
+	--color2: #f1f1f1; /* light grey */
+	--color3: #27496d; /* light blue */
+	--color4: #ffffff; /* white */
+}
+
+ /* width */
+::-webkit-scrollbar {
+  width: 4px;
+} 
+
+ /* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} 
+
+ /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #27496d;
+}
+
+ /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #142850;
+} 
+
+#banner{
+	margin: 0;
+	height: 50px;
+	background-color: var(--color3);
+}
+
+#banner Img{
+	position: relative;
+	margin-left: 1%;
+	top: 5px;
+	height: 40px;
+
+}
+
+#banner h2{
+	color: white;
+	margin-left: 1%;
+	display: inline-block;
+	font-size: 24px;
+}
+
+#info-table{
+	height: 150px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 70%;
+}
+
+.panel{
+	margin: 20px;
+}
+
+.tab{
+	font-size: 12px;
+	background-color: var(--color4) !important;
+	height: 0;
+	line-height: 0.5;
+}
+
+.selected-tab{
+  border-top-color: var(--color3) !important; 
+  color: var(--color3) !important;
+  font-weight: bold;
+}
+
+.text-container{
+	margin-left: 10px;
+	margin-top: 10px;
+
+	overflow-y: auto;
+	max-height: 450px;
+}
+
+.text-container h4{
+	margin-right: 20px;
+}
+
+.text-container h6{
+	margin-right: 20px;
+}
+
+.text-container p{
+	margin-right: 20px;
+	font-size: 13px;
+}
+
+.graph-container{
+	margin-top: 10px; 
+	overflow-y: auto;
+	max-height: 600px;
+}
+
+#layout-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color4);
+}
+
+div{
+	padding: 0;
+	margin: 0;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#panel-title h6{
+	text-align: center;
+	font-family: "Open Sans", verdana, arial, sans-serif;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.col{
+  width: 100%;
+  float: left;
+  box-sizing: border-box; 
+}
+
+.narrow.col{ width: 35%; }
+.wide.col{ width: 65%; }
+
+.half.col{width: 50%; }
+
+.dropdown{
+	margin: auto;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+
+#dropdown-currency{ 
+	width: 70%; 
+	float: left; 
+}
+
+#dropdown-period{ 
+	width: 20%; 
+	margin-right: 1%; 
+	float: left; 
+}
+
+#dropdown-datepicker{ 
+	width: 50%; 
+	float: left; 
+}
+
+/* No border on DateRangePicker */
+.DateRangePickerInput__withBorder{
+    border: 0;
+}
+
+.DateInput{
+	width: 44%;
+}
+
+#radio-picker{ 
+	width:20%; 
+	line-height: 1; 
+	font-size: 14px; 
+	margin-bottom: 30px; 
+	float:left; 
+} 

@@ -1,0 +1,274 @@
+* [GCP Blogs](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/557-GCP--blogs.md)
+* [9-Common-Errors-Made-During-API-Testing.md	](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/9-Common-Errors-Made-During-API-Testing.md	)
+* [A-Comprehensive-Analysis](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/A-Comprehensive-Analysis.md)
+* [access-Broadcast-Variables-in-Spark-java](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/access-Broadcast-Variables-in-Spark-java.md)
+* [ACCUMULATORS](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/ACCUMULATORS.md)
+* [Aggregating-over-sorted-data](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/Aggregating-over-sorted-data.md)
+* [Amazon-Cognito](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/Amazon-Cognito.md)
+* [Angular-2](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/Angular-2.md)
+* [Apache--streaming-performance](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/Apache--streaming-performance.md)
+
+
+* [structured-streaming]-How-to-remove-outdated-data-when-use-Window-Operations.md
+* [Apache Spark ACCUMULATORS](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/ACCUMULATORS.md)
+* [AWS-API-Gateway-Endpoints-Protect--using-API-Keys](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/AWS-API-Gateway-Endpoints-Protect--using-API-Keys.md	)
+
+* [151 Apache-Flink-Traning](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/Apache-Flink-Traning.md)
+* [Apache-Kafaka-install-on-ubantu-and-create-topic.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/Apache-Kafaka-install-on-ubantu-and-create-topic.md)
+* [Apache-Kafka---Integration-With-Spark-Java.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/Apache-Kafka---Integration-With-Spark-Java.md
+* [apache-Kafka-cheat-sheet.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/apache-Kafka-cheat-sheet.md)
+
+* [apache-kafka-quick-start-guide.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark--Differences-between-coalesce-and-repartition.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark--Lambda-architecture.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark--Shuffle-hash-join-vs--Broadcast-hash-join.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-2.0-Structured-Streaming.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-@Scale](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [apache-spark-as-a-compiler-joining-a-billion-rows-per-second-on-a-laptop.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Benchmarking.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-books.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Case-Study.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [apache-spark-case-when-else-in-sql.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-cluster-mode-configuration.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-custom-Encoder-example.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-DAG.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Data-load.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-DataFrames--serialization.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-spark-dealing-with-null.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Gotchas.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-handling-of-empty-partitions.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Hub.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Join-guidelines-and-Performance-tuning.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Join.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Key-Terms.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-ML.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-MLlib.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-spark-Monitoring-and-Instrumentation.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Natural-join-for-data-frames-in-spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Partition.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-spark-Partitions.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Performance-tuning.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-POC-and-benchmark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Prod-cluster-size.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Programming-Cheat-Sheet.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-programming-guide-notes-1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-programming-guide-notes-2.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-programming-guide-notes-3.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Quick-Guide.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-RDD-vs-DataFrame-vs-DataSet.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Rest-API.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Scala-Project-Template.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-serialization.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-SQL-Introduction.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-SQL-programming-guide-notes-1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-SQL.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Streaming.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-spark-test-sample-data.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Testing.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-Tuning-and-Debugging.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-UI.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-vs.-Apache-Drill-and-Apache-hawq.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark-web-UI.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Apache-Storm-vs-Apace-Spark-streaming.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Architectural-considerations-and-value.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Attend-the-webinar
+* [author.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-API-Gateway-Endpoints-Protect--using-API-Keys.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-API-getway-and-dynamodb.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-API-getway-developer-guide.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-Certification-notes.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-Custom-Lambda-authorizer---authentication-for-amazon-api-gateway-for-microservice.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-few-question-wrong.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-IP-Whitelisting-with-Amazon-API-Gateway.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-Lambda-orchestration.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-Lambda-run-locally-on-window.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-Lambda.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-Managing-API-access-with-Amazon-API-Gateway.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [AWS-Simple-email-service-in-different-regions.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Bibucket-as-a-maven-repository.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Blockchain-technology---a-very-special-kind-of-Distributed-Database.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Build-and-Deploy-Angular-App-to-Azure--via-KuduScript.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Building-Eureka-Client-and-Server.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Cloud-foundry-install-application.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Cloud-native-Data-with-Spark-2.3-and-Kubernetes.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Cognito-with-API-Gateway-custom-authorizer-Lambda-(Python-3.6).md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [com.gemstone.gemfire.cache.query.internal.StructImpl-cannot-be-cast-to-com.a.b.c.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Compare-Bigtable-to-BigQuery.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [CompletableFuture.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Concurrency,-multi-threading.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Configure-AWS-ELB-classic-load-balancer-SSL-and-point-to--godaddy-domain.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Configuring-Eureka.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Connect-Hive-using-beeline.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Connection-pool-setting-in-spring-boot-application-properties.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [CORS-in-AWS-API-Gateway---AWS-Lambda.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [CQRS-and-Event-Sourcing-in-Java-with-Spring-Framework.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [CQRS-example.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Curl-tools.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Data-lake.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Data-Science-books.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Databricks-cloud.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Databricks-guide.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Databricks-Spark-Knowledge-Base.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [databricks-Spark-reference-applications.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [DataFrames.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Debug-Apache-Spark-Code-Faster.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [delete.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Developing-Apache-Spark-Java-Applications-on-Eclipse.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Difference-between-flatMap()-and-map()-on-an-RDD.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Difference-between-HMACSHA256,-HMACSHA384-or-HMACSHA512--jwt.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Difference-between-registerTempTable()-and-saveAsTable()-in-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Difference-between-scaling-horizontally-and-vertically.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Difference-between-ShuffledRDD,-MapPartitionsRDD-and-ParallelCollectionRDD
+* [Distributed-Tracing-Demo-Zipkin-sluth.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Docker-commands.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Dr.-Elephant.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [235 ELK-Stack.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Eureka-at-a-glance.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [eureka-vs-Zookeper.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Exercises-1.1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Exercises-1.2.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Exercises.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Explanation-on-improving-code-generation-on-Apache-Spark-2.3-Catalyst-Codegen-Stage-grows-beyond-64-KB.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Exploring-Wikipedia-with-Apache-Spark
+* [Firebase-vs-Realm.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [flink-vs-spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GemFire--Geode
+* [Gemfire-Dashboard-jmx-metrics-grafana.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Gemfire-Geode--WAN-Replication.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Gemfire-Geode-doc.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Gemfire-Geode-Indexing-Best-Practices-Working-with-Gemfire-Indexes.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Gemfire-Issue-
+* [git-for-beginners-the-definitive-practical-guide.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Graph-QL.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GraphQL-issues-and-solutions-followed-by-unsolved-ones..md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Graphx--4.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GraphX--x.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GraphX-1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GraphX-2.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GraphX-3.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Graphx-4.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GraphX-5-Partition-Strategy-in-GraphX.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [GraphX-6.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [group-by.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Hadoop-analyzing-Gelocation-data.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Hadoop-command-1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Hadoop-command.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Has-anyone-managed-to-connect-to-Oracle-via-JDBC-from-Spark-CDH-5.5.2.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [HBase--Apache-Phonix-Spring-Boot--POC.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [HDP-Certified-Developer-(HDPCD)-Exam---Hortonworks.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [high-performance-spark---join-and-partition.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Hive-SQL.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Home.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [How-Databricks-makes-big-data-simple..md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [How-do-I-flatten-JSON-blobs-into-a-Data-Frame-using-Spark-Spark-SQL.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [How-do-persist-the-data-after-I-process-the-data-with-Structured-streaming....md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [How-to-Calculate-Hadoop-Cluster-Size.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [How-to-calculate-node-and-executors-memory-in-Apache-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [How-to-get-recent-value-in-spark-dataframe.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [How-to-use-Apache-Spark-to-find-the-most-Popular-Movies!.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [https](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Install-Kafka--on-Window.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Installing-Apache-Spark-on-Windows-7-environment.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Integrating-Apache-Spark-2.x-Jobs-with-Apache-NiFi-1.4-Apache-Livy.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [introducing-agile-analytics.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Introduction-to-AmpLab-Spark-Internals.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Introduction-to-Apache-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Java-best-question-and-answers.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Java-Code-Examples-for-org.apache.spark.api.java.function.Function.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Java-garbage-collection-options-cheat-sheet--HotSpot-JVM.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Java-Keystores-and-Truststores.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Java-to-Hive-connectivity.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Join.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [JWT-vs-OAuth.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [K-means.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Kafka-0.10-&-Spark-Streaming-2.0.2-POC.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Kafka-Connect-and-Spark-Straming.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Kafka-POC-on-Ubanu.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [kafka-spark-streaming-integration.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Kafka-start.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Knowledge-Driven-Microservices.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Lambda-Proxy-vs-Lambda-Integration-in-AWS-API-Gateway.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Load-Json-remove-corrupt-column.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Loop-in-Apache--spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Machine-Learning-Algorithms.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Manage-Spring-Boot-Logs-with-Elasticsearch,-Logstash-and-Kibana.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [mapPartitions.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Mastering-Apache-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Maven-scope.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [microservice-code.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Microservices.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [MY-LAB-Apache-Spark-Uber-data-analysis.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Narrow-Transformation-vs-Wide-Transformation.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Netflix.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [notebook.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Optimizing-Apache-Spark-with-Memory.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Overview-of-Kubernetes-architecture-and-main-concepts.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [PIG.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Problems-Spark-SQL-solves.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [RDD-Types-and-Operations.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [RDD-vs-Dataframe.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [RDDsTransformationsActions.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [reduce-vs-fold-in-apache-spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [reduceByKey--vs-groupBykey-vs-aggregateByKey-vs-combineByKey.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [reducebykey-vs-combinebykey-Apache-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [References-microservice-,docker.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [REST-api-for-monitoring-Spark-Streaming.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [sc.textFile-vs-sc.WholeTextFiles.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Scala---Basic.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Scala-Basic-part-1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [2 Scala-Basic-part-2.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [50 Scalable-Big-Data-at-Uber.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Scalable-Data-Science-book--data-set-for-analysis.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Scalable-Partition-Handling-for-Cloud-Native-Architecture-in-Apache-Spark-2.1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Scale-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Securing-Microservices-with-Spring-Cloud-Security.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [SOA-vs-Microservice.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark--common-code.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-cheetsheet.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Core.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Debugger-Overview¶.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-DF.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Error-CoarseGrainedExecutorBackend-Driver-disassociated!-Shutting-down
+* [Spark-Hardware-provisioning.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Join.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-memory-managment.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-notes.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Performance-Improving--With-Partitioning.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-SQL-and-dataset-type.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-SQL-links.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-SQL-paper.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-SQL.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Streaming-and-Twitter-Sentiment-Analysis.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Streaming-Intro.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Streaming-or--Flink-Streaming.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Streaming-Programming-Guide-1.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Streaming-Programming-Guide.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-Streaming-Stateful-Transformations-with-Windowing.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-structure-streaming-Unsupported-Operations.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-tutorial-and-Interview-Questions.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-tutorial.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-usecase.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spark-with-Mongodb.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [SparkDF-Join-Using-Broadcast-variable.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spring--Security-API-and-Web.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spring-Boot-to-Apache-Phonix-connection.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Spring-Framworks.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Stanford-Large-Network-Dataset-Collection.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Storm-and-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Submitting-applications-to-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Techniques-&-Best-Practices.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Test-Driven-Development-for-Big-Data.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [The-twelve-factor-app.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Top-5-mistakes-when-writing-spark-applications.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Top-Apache-Spark-Interview-Questions-And-Answers.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Tuning-and-Debugging-Apache-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Uber-Apache-Spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Websiote-Automation-recording-tools.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [What-is-JWT.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Wide-vs-Narrow-Dependencies.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [wikipedia-data-with-apache-spark.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Yoman--Grant.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/
+* [Zuul.md ](https://github.com/vaquarkhan/Techies-Notes-wiki/blob/master/

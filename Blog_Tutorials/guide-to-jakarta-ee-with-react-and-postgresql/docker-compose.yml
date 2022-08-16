@@ -1,0 +1,19 @@
+version: '3.6'
+services:
+  book-client-application:
+    build: frontend/
+    ports:
+      - "8080:80"
+  book-server-application:
+    build: .
+    ports:
+      - "9080:9080"
+      - "9443:9443"
+    links:
+      - book-store
+  book-store:
+    image: postgres:12
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres

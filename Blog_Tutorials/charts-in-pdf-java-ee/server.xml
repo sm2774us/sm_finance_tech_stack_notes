@@ -1,0 +1,19 @@
+<server description="new server">
+
+  <!-- Enable features -->
+  <featureManager>
+    <feature>javaee-8.0</feature>
+    <feature>microProfile-3.2</feature>
+  </featureManager>
+
+  <!-- To access this server from a remote client add a host attribute to
+    the following element, e.g. host="*" -->
+  <httpEndpoint httpPort="9080" httpsPort="9443"
+                id="defaultHttpEndpoint"/>
+
+  <keyStore id="defaultKeyStore" password="openliberty"/>
+
+  <basicRegistry id="basic" realm="BasicRealm">
+    <user name="openliberty" password="openliberty"/>
+  </basicRegistry>
+</server>

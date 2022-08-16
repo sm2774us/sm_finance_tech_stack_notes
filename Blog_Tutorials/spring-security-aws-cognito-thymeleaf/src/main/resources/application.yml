@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            clientId: foo-bar-replace-me
+            clientSecret: ${COGNITO_CLIENT_SECRET}
+            scope: openid, profile, email
+            redirectUriTemplate: http://localhost:8080/login/oauth2/code/cognito
+            clientName: rieckpil-test-client
+        provider:
+          cognito:
+            issuerUri: https://cognito-idp.eu-central-1.amazonaws.com/eu-central-1_1c1xrYxCx
+
+cognito:
+  logoutUrl: https://rieckpil-test.auth.eu-central-1.amazoncognito.com/logout

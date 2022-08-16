@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate: 
+        jdbc: 
+          lob: 
+            non_contextual_creation: true
+---
+spring:
+  profiles: generatesql
+  flyway:    enabled: false
+  jpa:
+    properties:
+      javax: 
+        persistence:
+          schema-generation:
+            create-source: metadata
+            scripts:
+              action: create
+              create-target: src/main/resources/ddl_jpa_creation.sql

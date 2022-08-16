@@ -1,0 +1,64 @@
+service: spring-cloud-function-aws
+
+provider:
+  name: aws
+  runtime: java11
+  region: eu-central-1
+  profile: serverless-admin # add this profile to ~/.aws/config or use an existing profile
+  memory: 1024
+  lambdaHashingVersion: 20201221
+  logRetentionInDays: 7
+  timeout: 10
+  iamRoleStatements:
+    - Effect: 'Allow'
+      Action:
+        - 's3:*'
+      Resource:
+        - 'arn:aws:s3:::${self:custom.orderEventBucket}/*'
+        - !Join [ '', [ 'arn:aws:s3:::', !Ref ServerlessDeploymentBucket, '/*' ] ]
+
+custom:
+  orderEventBucket: order-event-bucket-rieckpil # change to a globally unique bucket name
+
+package:
+  artifact: target/spring-cloud-function-aws-1.0.0-shaded.jar
+
+functions:
+  uppercase:
+    handler: org.springframework.cloud.function.adapter.aws.FunctionInvoker
+    environment:
+      SPRING_CLOUD_FUNCTION_DEFINITION: uppercase
+
+  randomString:
+    handler: de.rieckpil.blog.EmptyInputHandler
+    environment:
+      FUNCTION_NAME: randomString
+
+  s3EventProcessor:
+    handler: de.rieckpil.blog.S3EventHandler
+    events:
+      - s3:
+          bucket: ${self:custom.orderEventBucket}
+          event: s3:ObjectCreated:*
+    environment:
+      FUNCTION_NAME: processS3Event
+
+  createPerson:
+    handler: org.springframework.cloud.function.adapter.aws.SpringBootApiGatewayRequestHandler
+    events:
+      - http:
+          path: persons
+          method: post
+          cors: true
+    environment:
+      FUNCTION_NAME: processPerson
+
+  createXmlOrder:
+    handler: org.springframework.cloud.function.adapter.aws.SpringBootStreamHandler
+    events:
+      - http:
+          path: orders
+          method: post
+          cors: true
+    environment:
+      FUNCTION_NAME: processXmlOrder

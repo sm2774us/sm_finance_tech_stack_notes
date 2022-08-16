@@ -1,0 +1,35 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quarkus-stock-quote
+  labels:
+    app.kubernetes.io/part-of: Quarkus-DayTrader
+    app.kubernetes.io/name: quarkus
+spec:
+  selector:
+    matchLabels:
+      app: quarkus-stock-quote
+  template:
+    metadata:
+      labels:
+        app: quarkus-stock-quote
+    spec:
+      containers:
+      - name: tradr
+        image: quay.io/kameshsampath/quarkus-stock-quote:1.0.0
+        imagePullPolicy: Always
+        env:
+          - name: PORT
+            value: "8080"
+          - name: IEX_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: quarkus-portfolio
+                key: IEX_API_KEY
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
